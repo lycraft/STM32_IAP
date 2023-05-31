@@ -1,0 +1,42 @@
+# Keil Generated output files in the sub-directories.
+*.lst
+*.o
+*.d
+*.crf
+*.lnp
+*.axf
+*.htm
+*.build_log.htm
+*.dep
+*.iex
+*.i
+*.bin
+*.hex
+*.sct
+*.map
+
+#Keil Project screen layout file
+*.uvguix.*
+*.uvguix
+*.uvoptx
+*.dbgconf
+
+#Documents Ignore
+*.vscode/
+RTE/
+Templates/
+Examples/
+/0_Hardware/*
+
+ 
+#JLINK file
+JLinkLog.txt
+
+!*.uvprojx
+!*.h
+!*.c
+!*.ioc
+!*.PrjPcb
+!*.PcbDoc
+!*.SchDoc
+!*.pdf
