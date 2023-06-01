@@ -66,6 +66,8 @@ int main(void)
 {
     /* USER CODE BEGIN 1 */
     SCB->VTOR = FLASH_BASE | 0x3000;
+    __IO uint8_t upflag;
+    upflag = *(__IO uint8_t *)(0x08080C00UL);
     /* USER CODE END 1 */
 
     /* MCU Configuration--------------------------------------------------------*/
@@ -88,14 +90,20 @@ int main(void)
     MX_GPIO_Init();
     MX_USART1_UART_Init();
     /* USER CODE BEGIN 2 */
-
+    if(upflag == 'u')
+    {
+        HAL_FLASH_Unlock(); // Ω‚À¯FLASH
+        HAL_DATA_EEPROMEx_Program(TYPEPROGRAMDATA_BYTE, 0x08080C00UL, 'n');
+        HAL_FLASH_Lock(); // À¯FLASH
+    }
+    
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1)
     {
-        printf("App Start is OK!\r\n");
+
         HAL_Delay(1000);
         /* USER CODE END WHILE */
 

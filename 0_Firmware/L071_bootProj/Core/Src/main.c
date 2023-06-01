@@ -123,7 +123,7 @@ void JumpToApp(void)
 int main(void)
 {
     /* USER CODE BEGIN 1 */
-
+    __IO uint8_t *str;
     /* USER CODE END 1 */
 
     /* MCU Configuration--------------------------------------------------------*/
@@ -146,7 +146,12 @@ int main(void)
     MX_GPIO_Init();
     MX_USART1_UART_Init();
     /* USER CODE BEGIN 2 */
-    printf("Bootloader running!\r\n");
+    str = (__IO uint8_t *)(0x08080C00UL);
+    printf("Bootloader running!UpgradeState:%s\r\n", str);      // 固件升级存在标志位。
+    if(*str == 'u')
+    {
+        printf("uu\r\n");
+    }
     JumpToApp();
     /* USER CODE END 2 */
 
