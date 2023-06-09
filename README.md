@@ -1,7 +1,7 @@
 # STM32_IAP
 学习一下IAP固件升级。芯片用的是STM32L071RBT6。所以片上资源带有128K的FLASH,还有6K的EEPROM，20K的SRAM。
 
-<img src="E:\0_Project\2_GitHub\STM32_IAP\2_Images\flash.png" alt="flash" style="zoom:50%;" />
+<img src=".\2_Images\flash.png" alt="flash" style="zoom:50%;" />
 
 用stm32cubemx创建了两个工程：Bootloader和app。
 
