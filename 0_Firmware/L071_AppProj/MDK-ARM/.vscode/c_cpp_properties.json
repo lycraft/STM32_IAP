@@ -3,16 +3,16 @@
         {
             "name": "L071_AppProj",
             "includePath": [
-                "e:\\0_Project\\0_stm32cubeMX\\L071_AppProj\\Core\\Inc",
-                "e:\\0_Project\\0_stm32cubeMX\\L071_AppProj\\Drivers\\STM32L0xx_HAL_Driver\\Inc",
-                "e:\\0_Project\\0_stm32cubeMX\\L071_AppProj\\Drivers\\STM32L0xx_HAL_Driver\\Inc\\Legacy",
-                "e:\\0_Project\\0_stm32cubeMX\\L071_AppProj\\Drivers\\CMSIS\\Device\\ST\\STM32L0xx\\Include",
-                "e:\\0_Project\\0_stm32cubeMX\\L071_AppProj\\Drivers\\CMSIS\\Include",
+                "e:\\0_Project\\2_GitHub\\STM32_IAP\\0_Firmware\\L071_AppProj\\Core\\Inc",
+                "e:\\0_Project\\2_GitHub\\STM32_IAP\\0_Firmware\\L071_AppProj\\Drivers\\STM32L0xx_HAL_Driver\\Inc",
+                "e:\\0_Project\\2_GitHub\\STM32_IAP\\0_Firmware\\L071_AppProj\\Drivers\\STM32L0xx_HAL_Driver\\Inc\\Legacy",
+                "e:\\0_Project\\2_GitHub\\STM32_IAP\\0_Firmware\\L071_AppProj\\Drivers\\CMSIS\\Device\\ST\\STM32L0xx\\Include",
+                "e:\\0_Project\\2_GitHub\\STM32_IAP\\0_Firmware\\L071_AppProj\\Drivers\\CMSIS\\Include",
                 "D:\\Keil_v5\\ARM\\ARMCC\\include",
                 "D:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
-                "e:\\0_Project\\0_stm32cubeMX\\L071_AppProj\\MDK-ARM",
-                "e:\\0_Project\\0_stm32cubeMX\\L071_AppProj\\Core\\Src",
-                "e:\\0_Project\\0_stm32cubeMX\\L071_AppProj\\Drivers\\STM32L0xx_HAL_Driver\\Src"
+                "e:\\0_Project\\2_GitHub\\STM32_IAP\\0_Firmware\\L071_AppProj\\MDK-ARM",
+                "e:\\0_Project\\2_GitHub\\STM32_IAP\\0_Firmware\\L071_AppProj\\Core\\Src",
+                "e:\\0_Project\\2_GitHub\\STM32_IAP\\0_Firmware\\L071_AppProj\\Drivers\\STM32L0xx_HAL_Driver\\Src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

@@ -75,7 +75,7 @@ int main(void)
     /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
     HAL_Init();
 
-    /* USER CODE BEGIN Init */
+    /* USER CODE BEGIN Init */ 
 
     /* USER CODE END Init */
 
@@ -90,13 +90,13 @@ int main(void)
     MX_GPIO_Init();
     MX_USART1_UART_Init();
     /* USER CODE BEGIN 2 */
-    if(upflag == 'u')
+    if (upflag == 'u')
     {
-        HAL_FLASH_Unlock(); // Ω‚À¯FLASH
+        HAL_FLASH_Unlock(); // Ëß£ÈîÅFLASH
         HAL_DATA_EEPROMEx_Program(TYPEPROGRAMDATA_BYTE, 0x08080C00UL, 'n');
-        HAL_FLASH_Lock(); // À¯FLASH
+        HAL_FLASH_Lock(); // ÈîÅFLASH
     }
-    
+
     /* USER CODE END 2 */
 
     /* Infinite loop */
